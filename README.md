@@ -1,7 +1,7 @@
 Android ProgressBar Circle Generator
 ===========
 
-<p style="font-size: 35px" align="center"><a href="https://hknsoft.github.io/android-progress-bar-circle-generator/" target="_blank" style="color: #C9D1D9">Go Online Tool</a><p>
+<h1 align="center"><a href="https://hknsoft.github.io/android-progress-bar-circle-generator/" style="color: #C9D1D9">Go Online Tool</a></h1>
 
 ### Example of online tool:
 ![](https://hankagan.com/img/progress-bar-circle-online-tool.png "Android ProgressBar Circle Online Tool")
