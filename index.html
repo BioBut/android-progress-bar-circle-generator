@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Android generate ProgressDialog circle.">
+    <meta name="keywords"
+        content="android progressbar circle generator, android progress bar circle maker, progress bar spinning circle, change progress bar spinning circle, progressbar spinning circle, progress bar custom circle, progress bar circle generator, android progress bar circle generator,  android progress bar circle generator, android studio progress bar circle, android progress bar custom circle, progress dialog circular, android progress dialog, android progress bar, android custom progressbar, android progress bar circle online tool, android studio online tool">
+    <meta name="author" content="hknsoft">
+    <meta name="robots" content="index, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android ProgressBar Circle Generator</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/render-engine.min.js"></script>
+</head>
+
+<body>
+    <a href="https://github.com/hknsoft/progressbar-circle-generator" class="github_fork"
+        aria-label="View source on GitHub" title="View source on GitHub"><svg width="80" height="80"
+            viewBox="0 0 250 250" style="fill:#303434; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
+            aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo_arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo_body"></path>
+        </svg></a>
+
+    <div class="header_main">Android ProgressBar Circle Generator</div>
+    <table class="colons">
+        <tr>
+            <td>
+                <div class="render_engine_tool_tab">
+                    <span class="header">Preview</span>
+                    <button class="btn_run" value="run">&#9658; Run</button>
+                </div>
+            </td>
+
+            <td><span class="header">Properties</span></td>
+        </tr>
+
+        <tr>
+            <td class="colon_left">
+                <div class="render_box">
+                    <div class="render_engine">
+                        <div class="dialog_circle"></div>
+                        <code class="render_engine_version">render_engine v0.1 pre-alpha</code>
+                    </div>
+                </div>
+            </td>
+
+            <td class="colon_right">
+                <div class="properties_box">
+                    <table style="width: 100%; border-spacing: 0; border-collapse: collapse;">
+                        <tr>
+                            <td class="colon_left ccc">
+                                <div class="properties">
+                                    <span>Only one color</span>
+                                </div>
+                            </td>
+
+                            <td class="colon_right ccc">
+                                <div class="properties"><input type="checkbox" id="only_one_color"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="colon_left ccc">
+                                <div class="properties">
+                                    <span>android:thickness</span>
+                                </div>
+                            </td>
+
+                            <td class="colon_right ccc">
+                                <input id="thickness" type="number">
+                                <div id="thickness_range_box"><input type="range" id="thickness_range_input" name="vol"
+                                        min="5" max="30">
+                            </td>
+                        </tr>
+
+                        <tr class="row_properties_end_color">
+                            <td class="colon_left ccc">
+                                <div class="properties">
+                                    <span>android:endColor</span>
+                                </div>
+                            </td>
+
+                            <td class="colon_right ccc">
+                                <div class="properties"><input id="end_color" type="color"></div>
+                            </td>
+                        </tr>
+
+                        <tr class="row_properties_start_color">
+                            <td class="colon_left ccc">
+                                <div class="properties">
+                                    <span>android:startColor</span>
+                                </div>
+                            </td>
+
+                            <td class="colon_right ccc">
+                                <div class="properties"><input id="start_color" type="color"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="render_engine_tool_tab">
+                    <span class="header">Code</span>
+                    <span style="font-size: 16px; color: white;">(drawable/custom_circle.xml)</span>
+                    <button class="btn_copy" value="copy">Copy</button>
+                    <!--<button class="btn_download no_margin_left" value="download">Download XML file</button>-->
+                </div>
+            </td>
+
+            <td>
+                <span class="header"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="colon_left">
+                <div class="code_box">
+                    <div class="code" id="copy_code">
+                        <span class="tab0"><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code></span>
+                        <span
+                            class="tab0"><code>&lt;rotate xmlns:android="http://schemas.android.com/apk/res/android"</code></span>
+                        <span class="tab1"><code>android:fromDegrees="-90"</code></span>
+                        <span class="tab1"><code>android:pivotX="50%"</code></span>
+                        <span class="tab1"><code>android:pivotY="50%"</code></span>
+                        <span class="tab1"><code>android:toDegrees="1440"&gt;</code></span><br>
+
+                        <span class="tab1"><code>&lt;shape</code></span>
+                        <span class="tab2"><code>android:shape="ring"</code></span>
+                        <span class="tab2"><code>android:thickness="<span id="code_thickness">10</span>dp"</code></span>
+                        <span class="tab2"><code>android:useLevel="false"&gt;</code></span><br>
+
+                        <span class="tab2"><code>&lt;gradient</code></span>
+                        <span class="tab3"><code>android:centerY="0.5"</code></span>
+                        <span class="tab3"
+                            id="row_code_end_color"><code>android:endColor="<span id="code_end_color">#fffd30</span>"</code></span>
+                        <span class="tab3"
+                            id="row_code_start_color"><code>android:startColor="<span id="code_start_color">#000000</span>"</code></span>
+                        <span class="tab3"><code>android:type="sweep"</code></span>
+                        <span class="tab3"><code>android:useLevel="false" /&gt;</code></span>
+
+                        <span class="tab1"><code>&lt;/shape&gt;</code></span>
+                        <span class="tab0"><code>&lt;/rotate&gt;</code></span>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <p class="last_modified" id="last_modified"></p>
+                <div class="footer" id="footer"></div>
+            </td>
+        </tr>
+    </table>
+
+    <table class="colons" style="margin-top: 20px !important;">
+        <tr>
+            <td colspan="2">
+                <span class="header" style="float: left !important;">Usage</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div class="usage_help">
+                    <img src="./img/usage-help.png">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div class="usage_info">
+                    <p><b>Android ProgressBar Circle Generator</b> is online tool to generate custom ProgressBar
+                        circle for Android Apps.</br>
+                    <h3>Steps</h3># Customize circle in <b>Properties</b> panel.</br># And copy
+                    source code.</br># Create XML file in <b>drawable</b> folder and paste it.</br># Change
+                    ProgressBar circle =>
+                    <code class="pre_code">android:indeterminateDrawable="@drawable/custom_circle"</code></code></br>#
+                    Thats it!</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
